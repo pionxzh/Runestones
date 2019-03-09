@@ -1,25 +1,26 @@
-<template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
-</template>
-<style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
+<template lang='pug'>
+    v-app
+        v-toolbar(app)
+            v-toolbar-title.headline.text-uppercase
+                span TOS
+                span.ml-1.font-weight-light SIMULATOR
+            v-spacer
+            v-btn(flat icon)
+                v-icon.mr-5 settings
+        v-content
+            router-view
 
-#nav
-  padding 30px
-  a
-    font-weight bold
-    color #2c3e50
-    &.router-link-exact-active
-      color #42b983
+</template>
+
+<style lang='stylus'>
+    @import './stylus/main'
 </style>
+
+<script>
+
+export default {
+    data: () => ({
+
+    }),
+}
+</script>

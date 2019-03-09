@@ -1,0 +1,114 @@
+
+#app
+  font-family "\\5FAE\8F6F\96C5\9ED1", Microsoft Yahei, Helvetica, Helvetica Neue, Tahoma, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  text-align center
+  color #2c3e50
+
+#simulator
+  background-image: url('assets/UI/base.png')
+  background-size: 320px 320px
+  background-repeat: repeat
+  cursor: url('assets/UI/cursor_moveItem.png'), default
+
+.simulator-wrapper
+  margin-right: 16px
+  padding: 5px 10px 5px 10px
+  max-height: 100%
+  border-radius: 10px
+  background-color: #f44336
+
+.right-pane
+  margin-left: 16px
+
+.color-selection-btn img
+  height: 40px
+
+@media screen and (max-width: 800px)
+  .simulator-wrapper
+    margin-right: 0
+
+  .right-panel
+    margin-left: 0
+    margin-top: 32px
+
+  .color-selection-btn img
+    height: 33px
+
+.panel-card
+  background-color: #444!important
+
+.combo-panel
+  overflow-y: scroll
+
+.combo-wrapper
+  padding: 10px
+  align-items: left
+
+.combo-wrapper .combo-mode
+  font-size: 25px
+  font-weight: 800
+
+.combo-wrapper .combo-type
+  float: left
+
+/* override some vuetify default style */
+
+.v-tooltip__content span
+  font-size: 16px
+
+.fix-nav-drawer, .fix-nav-drawer aside
+  height: initial!important
+
+.layer-box
+  border-radius: 3px
+  background-color: #fcfcfc
+  margin-bottom: 10px!important
+
+.layer-box .v-messages,  .layer-box .v-text-field__details
+  display: none
+
+.layer-box .vue-swatches
+  display: inline-block
+
+.layer-box .vue-swatches > div
+  display: inline
+
+.layer-box .vue-swatches__trigger
+  width: 32px!important
+  height: 32px!important
+  border-radius: 7px!important
+  border: 1.6px solid rgb(158, 158, 158)
+
+.close-btn
+  width: 20px
+  height: 20px
+  float: right
+
+.close-btn .v-icon
+  font-size: 16px
+
+/* end of overriding*/
+
+
+/* scroll bar */
+
+::-webkit-scrollbar
+  width:6px!important
+  height:6px!important
+
+body::-webkit-scrollbar
+  width:6 px!important
+  height:6px!important
+
+::-webkit-scrollbar-track
+  background: rgba(255,255,255,0.22)!important
+  border-radius: 8px!important
+
+::-webkit-scrollbar-thumb
+  background-color: #343434!important
+  min-height:50px
+  border-radius: 5px!important
+
+/* end of scroll bar*/
