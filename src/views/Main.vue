@@ -3,7 +3,7 @@
         v-layout(row wrap)
             v-flex(xs12 md12)
                 p.mt-3(style='font-size: 35px;color: orange;font-weight: 800;') TOS Simulator
-                span#fps(style='color: yellow;font-size: 25px;font-family: "Orbitron", sans-serif;') 60
+                span#fps(style='color: yellow;font-size: 25px;font-family: "Orbitron", sans-serif;') 0
                 br
                 span(style='color: yellow;font-size: 25px;font-family: "Orbitron", sans-serif;') {{ comboList.length }} Combo
 

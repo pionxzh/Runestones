@@ -47,7 +47,7 @@ export default class Renderer {
         this.refresh()
         this.draw()
         this.restore()
-        // this.calcFps()
+        this.calcFps()
     }
 
     // Refresh the screen
@@ -269,9 +269,9 @@ export default class Renderer {
     static calcFps () {
         let current = 1000 / ((this.fps.now = Date.now()) - this.fps.lastUpdate)
         if (this.fps.now !== this.fps.lastUpdate) {
-            window.document.getElementById('fps').textContent = ~~this.fps.value
-            // this.fps.value += (current - this.fps.value) / this.fps.filter
-            this.fps.value = current
+            window.document.getElementById('fps').textContent = `FPS: ${~~this.fps.value}`
+            this.fps.value += (current - this.fps.value) / this.fps.filter
+            // this.fps.value = current
             this.fps.lastUpdate = this.fps.now
         }
     }

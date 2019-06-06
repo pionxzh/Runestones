@@ -1,4 +1,8 @@
-# Runestones 神魔之塔轉珠模擬與路徑計算
+# Runestones 神魔之塔轉珠模擬與~~路徑計算~~
+
+[DEMO](https://pionxzh.github.io/Runestones/)
+
+暫時只有轉珠模擬的實現
 
 ## Project setup
 ```
